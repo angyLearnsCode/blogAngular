@@ -3,25 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  background-color: #fafaed;
-  font-family: "M PLUS Rounded 1c", sans-serif;
-}
-
 .wrapper {
   display: flex;
   justify-content: center;
 }
+
 .formulario {
-  background-color: #1820ef;
   width: 90%;
+  background-color: #1820ef;
   border-radius: 10px;
   padding: 20px;
   margin-top: 20px;
-  margin-left: 10px;
   display: flex;
   flex-direction: column;
+  border: #ffc024 5px solid;
 }
 
 input {
@@ -69,8 +64,13 @@ input:focus {
 
 .contador {
   text-align: right;
-  font-size: small;
   color: #f9f9f0;
+  font-size: 0.8em;
+}
+
+.input-element {
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 .btn {
@@ -93,15 +93,9 @@ input:focus {
 
 div p {
   color: white;
-  font-size: 1.1em;
   padding-bottom: 3px;
 }
 
-@media (min-width: 1024px) {
-  .formulario {
-    width: 100%;
-  }
-}
 .logo-naming {
   display: flex;
 }

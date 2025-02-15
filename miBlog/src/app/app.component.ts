@@ -3,10 +3,11 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { PostsComponent } from './components/posts/posts.component';
 import { FormsModule } from '@angular/forms';
 import { IBooks } from './interfaces/ibooks.interface';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [FormularioComponent, PostsComponent, FormsModule],
+  imports: [FormularioComponent, PostsComponent, FormsModule, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })

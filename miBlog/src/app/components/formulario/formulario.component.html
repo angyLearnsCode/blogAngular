@@ -1,19 +1,19 @@
 <section class="wrapper">
   <div class="formulario">
     <div class="titulo">
-      <p>Título del libro</p>
+      <p class="input-element">Título del libro</p>
       <input type="text" maxlength="50" placeholder="Introduce el título" />
     </div>
     <div class="fecha">
-      <p>Fecha de lectura</p>
+      <p class="input-element">Fecha de lectura</p>
       <input type="date" name="" id="" />
     </div>
     <div class="portada">
-      <p>Portada del libro</p>
+      <p class="input-element">Portada del libro</p>
       <input type="text" placeholder="URL de la imagen de la portada" />
     </div>
     <div>
-      <p>Escribe una reseña</p>
+      <p class="input-element">Escribe una reseña</p>
       <textarea
         [(ngModel)]="resena"
         (input)="onInput()"

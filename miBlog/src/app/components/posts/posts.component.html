@@ -1,1 +1,16 @@
-<section [innerHTML]="text"></section>
+<div class="wrapper">
+  <article *ngFor="let book of booklist" class="contenedor">
+    <div class="contenedor-img">
+      <img [src]="book.urlPhoto" alt="Book Image" />
+    </div>
+    <div class="contenedor-textos">
+      <div class="titulo-fecha">
+        <p class="titulo">{{ book.title }}</p>
+        <p class="fecha">{{ book.date }}</p>
+      </div>
+      <div class="area-texto">
+        <p>{{ book.text }}</p>
+      </div>
+    </div>
+  </article>
+</div>
