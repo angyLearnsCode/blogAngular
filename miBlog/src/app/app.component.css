@@ -1,0 +1,40 @@
+body {
+  background-color: #fafaed;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.logo-naming {
+  display: flex;
+  width: 80%;
+  align-items: center;
+}
+
+.logo {
+  max-width: 8%;
+  height: auto;
+  object-fit: contain;
+}
+
+.naming {
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+
+.content-cabecera {
+  display: flex;
+  justify-content: center;
+  background-color: #ffc024;
+  padding: 20px 50px 20px 50px;
+  align-items: center;
+}
+
+.cabecera-wrapper {
+  border-bottom: 3px solid black;
+}
+
+.slogan {
+  font-style: italic;
+  font-size: 1.1em;
+  width: 50%;
+}

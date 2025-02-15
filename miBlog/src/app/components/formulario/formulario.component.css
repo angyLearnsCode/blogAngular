@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafaed;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.formulario {
+  background-color: #1820ef;
+  width: 90%;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  padding: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus {
+  border: 3px solid #ffc024;
+  outline: none;
+}
+
+.inputResena {
+  height: 200px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 1.2;
+  font-size: 14px;
+  padding: 8px;
+  outline: none;
+}
+
+.inputResena:focus {
+  border: 3px solid #ffc024;
+  outline: none;
+}
+
+.titulo {
+  padding-bottom: 10px;
+}
+
+.fecha {
+  padding-bottom: 10px;
+}
+
+.portada {
+  padding-bottom: 10px;
+}
+
+.contador {
+  text-align: right;
+  font-size: small;
+  color: #f9f9f0;
+}
+
+.btn {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 20px 0 0 0;
+  font-size: 16px;
+  background-color: #ffc024;
+  color: #1820ef;
+  font-weight: 900;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #fafaed;
+}
+
+div p {
+  color: white;
+  font-size: 1.1em;
+  padding-bottom: 3px;
+}
+
+@media (min-width: 1024px) {
+  .formulario {
+    width: 100%;
+  }
+}
+.logo-naming {
+  display: flex;
+}
+
+.logo {
+  width: 20%;
+}
+
+.naming {
+  width: 80%;
+}
+
+.cabecera {
+  justify-content: center;
+  padding: 30px;
+  border-bottom: 3px solid black;
+  background-color: #ffc024;
+}
+
+.slogan {
+  font-style: italic;
+}
