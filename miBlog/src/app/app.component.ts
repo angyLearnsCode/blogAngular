@@ -27,3 +27,5 @@ export class AppComponent {
     },
   ];
 }
+
+// COMIENDO FUNCIONALIDAD
