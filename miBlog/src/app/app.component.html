@@ -21,7 +21,13 @@
         <p class="slogan">Reseñas breves, grandes historias</p>
       </div>
     </header>
-    <app-formulario></app-formulario>
-    <app-posts></app-posts>
+    <main>
+      <section>
+        <app-formulario></app-formulario>
+      </section>
+      <section>
+        <app-posts [booklist]="arrBooks"></app-posts>
+      </section>
+    </main>
   </body>
 </html>
