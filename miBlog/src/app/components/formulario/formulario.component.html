@@ -2,20 +2,29 @@
   <div class="formulario">
     <div class="titulo">
       <p class="input-element">Título del libro</p>
-      <input type="text" maxlength="50" placeholder="Introduce el título" />
+      <input
+        type="text"
+        maxlength="50"
+        placeholder="Introduce el título"
+        [(ngModel)]="newBook.title"
+      />
     </div>
     <div class="fecha">
       <p class="input-element">Fecha de lectura</p>
-      <input type="date" name="" id="" />
+      <input type="date" name="" id="" [(ngModel)]="newBook.date" />
     </div>
     <div class="portada">
       <p class="input-element">Portada del libro</p>
-      <input type="text" placeholder="URL de la imagen de la portada" />
+      <input
+        type="text"
+        placeholder="URL de la imagen de la portada"
+        [(ngModel)]="newBook.urlPhoto"
+      />
     </div>
     <div>
       <p class="input-element">Escribe una reseña</p>
       <textarea
-        [(ngModel)]="resena"
+        [(ngModel)]="model.resena"
         (input)="onInput()"
         maxlength="500"
         class="inputResena"
@@ -23,6 +32,6 @@
       <p class="contador">Quedan {{ caracteresRestantes }} caracteres</p>
     </div>
 
-    <button class="btn">PUBLICAR</button>
+    <button (click)="getBook()" class="btn">PUBLICAR</button>
   </div>
 </section>

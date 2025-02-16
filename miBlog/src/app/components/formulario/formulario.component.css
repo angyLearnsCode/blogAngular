@@ -91,7 +91,7 @@ input:focus {
   background-color: #fafaed;
 }
 
-div p {
+.input-element {
   color: white;
   padding-bottom: 3px;
 }
