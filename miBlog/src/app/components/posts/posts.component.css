@@ -7,19 +7,20 @@
 .contenedor {
   display: flex;
   flex-direction: column;
-  background-color: #1820ef;
-  color: white;
-  border: #ffc024 5px solid;
+  background-color: #ffeaa7;
+  color: #2c3e50;
   margin: 10px 0;
   border-radius: 10px;
   display: flex;
   width: 90%;
   align-items: center;
   gap: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contenedor-img {
-  padding-top: 20px;
+  padding-top: 50px;
+  padding-bottom: 25px;
   max-width: 50%;
   height: auto;
   display: flex;
@@ -41,6 +42,7 @@
   align-items: flex-start;
   gap: 10px;
   margin-top: 10px;
+  padding: 0 30px;
 }
 
 .titulo {
@@ -57,10 +59,8 @@
 }
 
 .area-texto {
-  background-color: beige;
   color: black;
   margin-top: 10px;
   border-radius: 10px;
-  padding: 10px 20px;
-  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 0 30px 30px 30px;
 }

@@ -10,13 +10,13 @@
 
 .formulario {
   width: 90%;
-  background-color: #1820ef;
+  background-color: #2c3e50;
   border-radius: 10px;
   padding: 20px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-  border: #ffc024 5px solid;
+  gap: 10px;
 }
 
 input {
@@ -74,6 +74,7 @@ input:focus {
 }
 
 .btn {
+  width: 40%;
   appearance: none;
   border: none;
   cursor: pointer;
@@ -81,7 +82,7 @@ input:focus {
   margin: 20px 0 0 0;
   font-size: 16px;
   background-color: #ffc024;
-  color: #1820ef;
+  color: #2c3e50;
   font-weight: 900;
   border-radius: 20px;
   transition: background-color 0.3s;
@@ -93,7 +94,7 @@ input:focus {
 
 .input-element {
   color: white;
-  padding-bottom: 3px;
+  padding-bottom: 10px;
 }
 
 .logo-naming {
