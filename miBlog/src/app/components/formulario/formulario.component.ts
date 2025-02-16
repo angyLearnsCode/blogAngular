@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IBooks } from '../../interfaces/ibooks.interface';
 
@@ -19,12 +19,20 @@ export class FormularioComponent {
     urlPhoto: '',
     text: '',
   };
+  @Output() sendBook: EventEmitter<IBooks> = new EventEmitter();
+
   onInput() {
     this.newBook.text = this.model.resena;
     this.caracteresRestantes = this.maxLength - this.model.resena.length;
   }
 
   getBook() {
-    console.log(this.newBook);
+    this.sendBook.emit(this.newBook);
+    this.newBook = {
+      title: '',
+      date: '',
+      urlPhoto: '',
+      text: '',
+    };
   }
 }

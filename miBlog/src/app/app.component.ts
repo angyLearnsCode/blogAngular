@@ -26,6 +26,9 @@ export class AppComponent {
       text: 'La historia sigue a un grupo de personas que luchan por sobrevivir en medio de la anarquía, mientras exploran la fragilidad de la sociedad y la naturaleza humana. Con un estilo narrativo único y profundo, Saramago aborda temas de solidaridad, poder y deshumanización en una sociedad colapsada.',
     },
   ];
-}
 
-// COMIENDO FUNCIONALIDAD
+  getDataForm(event: IBooks) {
+    this.arrBooks.unshift(event);
+    console.log(this.arrBooks);
+  }
+}
