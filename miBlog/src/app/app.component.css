@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  background: linear-gradient(to bottom, #fffbea 25%, #2c3e50 40%);
 }
 
 .content-cabecera {
@@ -21,7 +22,7 @@ body {
 }
 
 .content-cabecera img {
-  width: 70%;
+  max-width: 400px;
 }
 
 .cabecera-wrapper {
@@ -35,19 +36,31 @@ body {
   color: white;
 }
 
-.ultimas-lecturas {
-  padding: 30px 0 15px 20px;
-  color: #2c3e50;
+.formulario {
+  margin-bottom: 70px;
 }
 
-.posts {
-  background: linear-gradient(to bottom, #fffbea 2%, #2c3e50 25%);
+.divider {
+  width: 80%;
+  align-items: center;
+  margin-bottom: 10px;
 }
+
+.contain-divider {
+  display: flex;
+  justify-content: center;
+}
+
+/* .posts {
+  background: linear-gradient(to bottom, #fffbea 2%, #2c3e50 25%);
+} */
 
 /* MOBILE FIRST */
 @media screen and (min-width: 1024px) {
   .wrapper {
     flex-direction: row;
+    justify-content: center;
+    background: none;
   }
 
   .content-cabecera {
@@ -55,11 +68,12 @@ body {
   }
 
   .content-cabecera img {
-    width: 20%;
+    max-width: 400px;
   }
 
   .formulario {
     width: 25%;
+    margin-left: 50px;
   }
 
   .posts {
@@ -68,9 +82,7 @@ body {
     padding-top: 0;
   }
 
-  .ultimas-lecturas {
-    padding: 40px 0 10px 0;
-    font-size: 1.8em;
-    margin-top: 20px;
+  .divider {
+    display: none;
   }
 }

@@ -18,9 +18,11 @@
           <app-formulario (sendBook)="getDataForm($event)"></app-formulario>
         </section>
       </div>
+      <div class="contain-divider">
+        <img src="separador.png" class="divider" alt="" />
+      </div>
       <div class="posts">
         <section>
-          <h2 class="ultimas-lecturas">Tus últimas lecturas:</h2>
           <app-posts [booklist]="arrBooks"></app-posts>
         </section>
       </div>

@@ -43,6 +43,8 @@ export class FormularioComponent {
       urlPhoto: '',
       text: '',
     };
+    this.model.resena = '';
+    this.caracteresRestantes = this.maxLength;
   }
 
   isFormValid() {
