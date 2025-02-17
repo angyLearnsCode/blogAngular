@@ -72,3 +72,21 @@
   border-radius: 10px;
   padding: 0 30px 30px 30px;
 }
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    flex-direction: row;
+    justify-content: left;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .contenedor {
+    width: 30%;
+  }
+
+  .contenedor-textos {
+    padding: 0 0 0 0;
+  }
+}

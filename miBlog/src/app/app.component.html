@@ -13,13 +13,13 @@
     </header>
 
     <main class="wrapper">
-      <div>
+      <div class="formulario">
         <section>
           <app-formulario (sendBook)="getDataForm($event)"></app-formulario>
         </section>
       </div>
-      <div>
-        <section class="posts">
+      <div class="posts">
+        <section>
           <h2 class="ultimas-lecturas">Tus últimas lecturas:</h2>
           <app-posts [booklist]="arrBooks"></app-posts>
         </section>

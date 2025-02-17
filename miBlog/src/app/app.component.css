@@ -11,12 +11,6 @@ body {
   gap: 20px;
 }
 
-.logo-naming {
-  display: flex;
-  width: 80%;
-  align-items: center;
-}
-
 .content-cabecera {
   display: flex;
   justify-content: left;
@@ -48,4 +42,33 @@ body {
 
 .posts {
   background: linear-gradient(to bottom, #fffbea 2%, #2c3e50 25%);
+}
+
+/* MOBILE FIRST */
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
+  .content-cabecera {
+    justify-content: center;
+  }
+
+  .content-cabecera img {
+    width: 20%;
+  }
+
+  .formulario {
+    width: 30%;
+  }
+
+  .posts {
+    width: 60%;
+    background: none;
+  }
+
+  .ultimas-lecturas {
+    padding: 40px 0 20px 0;
+    font-size: 1.7em;
+  }
 }
