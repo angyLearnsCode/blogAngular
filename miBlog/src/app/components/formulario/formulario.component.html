@@ -33,11 +33,15 @@
       <textarea
         [(ngModel)]="model.resena"
         (input)="onInput()"
+        (blur)="onResenaBlur()"
         maxlength="500"
         class="inputResena"
         required
       ></textarea>
       <p class="contador">Quedan {{ caracteresRestantes }} caracteres</p>
+      <p *ngIf="resenaInvalid" class="error-message">
+        Necesitas superar los 150 caracteres
+      </p>
     </div>
 
     <button

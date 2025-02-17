@@ -11,9 +11,11 @@ import { CommonModule } from '@angular/common';
 })
 export class FormularioComponent {
   maxLength: number = 500;
+  minLength: number = 150;
   caracteresRestantes: number = this.maxLength;
   model = { resena: '' };
   urlInvalid: boolean = false;
+  resenaInvalid: boolean = false;
 
   newBook: IBooks = {
     title: '',
@@ -54,5 +56,9 @@ export class FormularioComponent {
 
   onUrlBlur() {
     this.urlInvalid = !this.isUrlValid(this.newBook.urlPhoto);
+  }
+
+  onResenaBlur() {
+    this.resenaInvalid = this.model.resena.length < this.minLength;
   }
 }
