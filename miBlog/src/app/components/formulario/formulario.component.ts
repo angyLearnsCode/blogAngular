@@ -31,7 +31,6 @@ export class FormularioComponent {
   onInput() {
     this.newBook.text = this.model.resena;
     this.caracteresRestantes = this.maxLength - this.model.resena.length;
-    this.resenaInvalid = this.model.resena.length < this.minLength;
   }
 
   getBook() {
