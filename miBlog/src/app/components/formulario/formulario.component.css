@@ -29,7 +29,7 @@ input {
 }
 
 input:focus {
-  border: 3px solid #ffc024;
+  border: 3px solid #ffeaa7;
   outline: none;
 }
 
@@ -47,7 +47,7 @@ input:focus {
 }
 
 .inputResena:focus {
-  border: 3px solid #ffc024;
+  border: 3px solid #ffeaa7;
   outline: none;
 }
 
@@ -118,4 +118,13 @@ input:focus {
 
 .slogan {
   font-style: italic;
+}
+
+input.error {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: rgb(255, 0, 0);
+  font-size: 12px;
 }

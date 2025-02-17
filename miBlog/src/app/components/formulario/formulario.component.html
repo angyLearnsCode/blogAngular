@@ -7,11 +7,12 @@
         maxlength="50"
         placeholder="Introduce el título"
         [(ngModel)]="newBook.title"
+        required
       />
     </div>
     <div class="fecha">
       <p class="input-element">Fecha de lectura</p>
-      <input type="date" name="" id="" [(ngModel)]="newBook.date" />
+      <input type="date" name="" id="" [(ngModel)]="newBook.date" required />
     </div>
     <div class="portada">
       <p class="input-element">Portada del libro</p>
@@ -19,7 +20,13 @@
         type="text"
         placeholder="URL de la imagen de la portada"
         [(ngModel)]="newBook.urlPhoto"
+        required
+        (blur)="onUrlBlur()"
+        [ngClass]="{ error: urlInvalid }"
       />
+      <p *ngIf="urlInvalid" class="error-message">
+        Asegúrate de ingresar una URL válida
+      </p>
     </div>
     <div>
       <p class="input-element">Escribe una reseña</p>
@@ -28,10 +35,17 @@
         (input)="onInput()"
         maxlength="500"
         class="inputResena"
+        required
       ></textarea>
       <p class="contador">Quedan {{ caracteresRestantes }} caracteres</p>
     </div>
 
-    <button (click)="getBook()" class="btn">PUBLICAR</button>
+    <button
+      (click)="getBook()"
+      class="btn"
+      [disabled]="!isFormValid() || !isUrlValid(newBook.urlPhoto)"
+    >
+      PUBLICAR
+    </button>
   </div>
 </section>
