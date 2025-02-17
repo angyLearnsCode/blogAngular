@@ -18,8 +18,8 @@
         name="date"
         id="date"
         [(ngModel)]="newBook.date"
-        (change)="formatDate()"
         required
+        [attr.max]="maxDate"
       />
     </div>
     <div class="portada">
@@ -47,6 +47,7 @@
         class="inputResena"
         [ngClass]="{ error: resenaInvalid }"
         required
+        [attr.max]="maxDate"
       ></textarea>
       <div class="contador">
         <p>Quedan {{ caracteresRestantes }} caracteres</p>
