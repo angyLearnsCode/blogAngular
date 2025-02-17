@@ -61,4 +61,8 @@ export class FormularioComponent {
   onResenaBlur() {
     this.resenaInvalid = this.model.resena.length < this.minLength;
   }
+
+  onResenaFocus() {
+    this.resenaInvalid = false;
+  }
 }

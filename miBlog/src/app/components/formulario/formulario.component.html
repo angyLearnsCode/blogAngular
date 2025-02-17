@@ -34,14 +34,18 @@
         [(ngModel)]="model.resena"
         (input)="onInput()"
         (blur)="onResenaBlur()"
+        (focus)="onResenaFocus()"
         maxlength="500"
         class="inputResena"
+        [ngClass]="{ error: resenaInvalid }"
         required
       ></textarea>
-      <p class="contador">Quedan {{ caracteresRestantes }} caracteres</p>
-      <p *ngIf="resenaInvalid" class="error-message">
-        Necesitas superar los 150 caracteres
-      </p>
+      <div class="contador">
+        <p>Quedan {{ caracteresRestantes }} caracteres</p>
+        <p *ngIf="resenaInvalid" class="error-message">
+          Necesitas superar los 150 caracteres
+        </p>
+      </div>
     </div>
 
     <button
