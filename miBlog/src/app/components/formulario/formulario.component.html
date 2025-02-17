@@ -60,7 +60,9 @@
     <button
       (click)="getBook()"
       class="btn"
-      [disabled]="!isFormValid() || !isUrlValid(newBook.urlPhoto)"
+      [disabled]="
+        !isFormValid() || !isUrlValid(newBook.urlPhoto) || resenaInvalid
+      "
     >
       PUBLICAR
     </button>

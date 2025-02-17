@@ -29,5 +29,9 @@ export class AppComponent {
 
   getDataForm(event: IBooks) {
     this.arrBooks.unshift(event);
+
+    this.arrBooks.sort((a, b) => {
+      return new Date(b.date).getTime() - new Date(a.date).getTime();
+    });
   }
 }
