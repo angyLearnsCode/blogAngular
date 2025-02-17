@@ -59,16 +59,18 @@ body {
   }
 
   .formulario {
-    width: 30%;
+    width: 25%;
   }
 
   .posts {
-    width: 60%;
+    width: 70%;
     background: none;
+    padding-top: 0;
   }
 
   .ultimas-lecturas {
-    padding: 40px 0 20px 0;
-    font-size: 1.7em;
+    padding: 40px 0 10px 0;
+    font-size: 1.8em;
+    margin-top: 20px;
   }
 }

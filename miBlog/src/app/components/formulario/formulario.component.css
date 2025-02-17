@@ -18,6 +18,7 @@
   flex-direction: column;
   gap: 10px;
   box-shadow: -4px -6px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
 }
 
 input {
@@ -139,4 +140,14 @@ input.error {
   padding-bottom: 20px;
   padding-top: 10px;
   color: #f4eed2;
+}
+
+@media screen and (min-width: 1024px) {
+  .anade-formulario {
+    font-size: 2em;
+  }
+
+  .btn {
+    width: 50%;
+  }
 }
