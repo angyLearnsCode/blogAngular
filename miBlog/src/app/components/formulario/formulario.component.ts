@@ -65,4 +65,14 @@ export class FormularioComponent {
   onResenaFocus() {
     this.resenaInvalid = false;
   }
+
+  formatDate() {
+    if (this.newBook.date) {
+      const date = new Date(this.newBook.date);
+      const day = ('0' + date.getDate()).slice(-2);
+      const month = ('0' + (date.getMonth() + 1)).slice(-2);
+      const year = date.getFullYear();
+      this.newBook.date = `${day}-${month}-${year}`;
+    }
+  }
 }

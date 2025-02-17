@@ -13,7 +13,14 @@
     </div>
     <div class="fecha">
       <p class="input-element">Fecha de lectura</p>
-      <input type="date" name="" id="" [(ngModel)]="newBook.date" required />
+      <input
+        type="date"
+        name="date"
+        id="date"
+        [(ngModel)]="newBook.date"
+        (change)="formatDate()"
+        required
+      />
     </div>
     <div class="portada">
       <p class="input-element">Portada del libro</p>
