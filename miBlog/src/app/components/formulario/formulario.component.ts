@@ -35,6 +35,7 @@ export class FormularioComponent {
 
   getBook() {
     this.sendBook.emit(this.newBook);
+
     this.newBook = {
       title: '',
       date: '',
