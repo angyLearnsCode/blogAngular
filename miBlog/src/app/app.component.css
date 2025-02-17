@@ -27,7 +27,7 @@ body {
 }
 
 .content-cabecera img {
-  width: 60%;
+  width: 70%;
 }
 
 .cabecera-wrapper {
@@ -39,4 +39,13 @@ body {
   width: 90%;
   flex-grow: 1;
   color: white;
+}
+
+.ultimas-lecturas {
+  padding: 30px 0 15px 20px;
+  color: #2c3e50;
+}
+
+.posts {
+  background: linear-gradient(to bottom, #fffbea 2%, #2c3e50 25%);
 }

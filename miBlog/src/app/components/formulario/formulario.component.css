@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  box-shadow: -4px -4px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: -4px -6px 5px rgba(0, 0, 0, 0.1);
 }
 
 input {
@@ -76,7 +76,7 @@ input:focus {
 }
 
 .btn {
-  width: 40%;
+  width: 100%;
   appearance: none;
   border: none;
   cursor: pointer;
@@ -133,4 +133,10 @@ input.error {
 .error-message {
   color: rgb(255, 0, 0);
   font-size: 12px;
+}
+
+.anade-formulario {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  color: #f4eed2;
 }
